@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "WheelyGoodCars (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "WheelyGoodCars (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
