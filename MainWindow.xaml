@@ -10,7 +10,7 @@
     Title="WheelyGoodCars">
 
     <NavigationView x:Name="navView" PaneDisplayMode="Top" SelectionFollowsFocus="Enabled" IsBackButtonVisible="Collapsed"
-        Grid.Row="1" SelectionChanged="navView_SelectionChanged">
+        Grid.Row="1" SelectionChanged="navView_SelectionChanged" Background="CornflowerBlue" >
         <NavigationView.MenuItems>
             <NavigationViewItem Content="Wheely Good Cars!" x:Name="NavItem_Home"/>
             <NavigationViewItem Content="Alle Auto's" x:Name="NavItem_AllCars"/>

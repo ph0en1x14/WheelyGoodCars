@@ -226,7 +226,7 @@ namespace WheelyGoodCars.WheelyGoodCars_XamlTypeInfo
         
         private void InitTypeTables()
         {
-            _typeNameTable = new string[38];
+            _typeNameTable = new string[39];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
@@ -262,11 +262,12 @@ namespace WheelyGoodCars.WheelyGoodCars_XamlTypeInfo
             _typeNameTable[32] = "WheelyGoodCars.Page_Home";
             _typeNameTable[33] = "Microsoft.UI.Xaml.Controls.Page";
             _typeNameTable[34] = "Microsoft.UI.Xaml.Controls.UserControl";
-            _typeNameTable[35] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
-            _typeNameTable[36] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
-            _typeNameTable[37] = "Int32";
+            _typeNameTable[35] = "WheelyGoodCars.Page_MyOffers";
+            _typeNameTable[36] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
+            _typeNameTable[37] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
+            _typeNameTable[38] = "Int32";
 
-            _typeTable = new global::System.Type[38];
+            _typeTable = new global::System.Type[39];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
@@ -302,9 +303,10 @@ namespace WheelyGoodCars.WheelyGoodCars_XamlTypeInfo
             _typeTable[32] = typeof(global::WheelyGoodCars.Page_Home);
             _typeTable[33] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
             _typeTable[34] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
-            _typeTable[35] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
-            _typeTable[36] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
-            _typeTable[37] = typeof(global::System.Int32);
+            _typeTable[35] = typeof(global::WheelyGoodCars.Page_MyOffers);
+            _typeTable[36] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
+            _typeTable[37] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
+            _typeTable[38] = typeof(global::System.Int32);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -346,7 +348,8 @@ namespace WheelyGoodCars.WheelyGoodCars_XamlTypeInfo
         private object Activate_28_InfoBadge() { return new global::Microsoft.UI.Xaml.Controls.InfoBadge(); }
         private object Activate_30_MainWindow() { return new global::WheelyGoodCars.MainWindow(); }
         private object Activate_32_Page_Home() { return new global::WheelyGoodCars.Page_Home(); }
-        private object Activate_35_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
+        private object Activate_35_Page_MyOffers() { return new global::WheelyGoodCars.Page_MyOffers(); }
+        private object Activate_36_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
         private void StaticInitializer_0_XamlControlsResources() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources).TypeHandle);
         private void StaticInitializer_4_NavigationView() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationView).TypeHandle);
         private void StaticInitializer_6_NavigationViewPaneDisplayMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode).TypeHandle);
@@ -364,8 +367,9 @@ namespace WheelyGoodCars.WheelyGoodCars_XamlTypeInfo
         private void StaticInitializer_28_InfoBadge() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.InfoBadge).TypeHandle);
         private void StaticInitializer_30_MainWindow() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::WheelyGoodCars.MainWindow).TypeHandle);
         private void StaticInitializer_32_Page_Home() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::WheelyGoodCars.Page_Home).TypeHandle);
-        private void StaticInitializer_35_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
-        private void StaticInitializer_36_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
+        private void StaticInitializer_35_Page_MyOffers() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::WheelyGoodCars.Page_MyOffers).TypeHandle);
+        private void StaticInitializer_36_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
+        private void StaticInitializer_37_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -379,7 +383,7 @@ namespace WheelyGoodCars.WheelyGoodCars_XamlTypeInfo
             var newItem = (global::System.Object)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_36_IList(object instance, object item)
+        private void VectorAdd_37_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.UI.Xaml.Controls.TreeViewNode>)instance;
             var newItem = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)item;
@@ -648,10 +652,18 @@ namespace WheelyGoodCars.WheelyGoodCars_XamlTypeInfo
                 xamlType = new global::WheelyGoodCars.WheelyGoodCars_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 35:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
+            case 35:   //  WheelyGoodCars.Page_MyOffers
+                userType = new global::WheelyGoodCars.WheelyGoodCars_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_35_Page_MyOffers;
+                userType.StaticInitializer = StaticInitializer_35_Page_MyOffers;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 36:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
                 userType = new global::WheelyGoodCars.WheelyGoodCars_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_35_TreeViewNode;
-                userType.StaticInitializer = StaticInitializer_35_TreeViewNode;
+                userType.Activator = Activate_36_TreeViewNode;
+                userType.StaticInitializer = StaticInitializer_36_TreeViewNode;
                 userType.AddMemberName("Children");
                 userType.AddMemberName("Content");
                 userType.AddMemberName("Depth");
@@ -663,15 +675,15 @@ namespace WheelyGoodCars.WheelyGoodCars_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 36:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
+            case 37:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
                 userType = new global::WheelyGoodCars.WheelyGoodCars_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.StaticInitializer = StaticInitializer_36_IList;
-                userType.CollectionAdd = VectorAdd_36_IList;
+                userType.StaticInitializer = StaticInitializer_37_IList;
+                userType.CollectionAdd = VectorAdd_37_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 37:   //  Int32
+            case 38:   //  Int32
                 xamlType = new global::WheelyGoodCars.WheelyGoodCars_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
