@@ -10,15 +10,14 @@
     Title="WheelyGoodCars">
 
     <NavigationView x:Name="navView" PaneDisplayMode="Top" SelectionFollowsFocus="Enabled" IsBackButtonVisible="Collapsed"
-        Grid.Row="1" SelectionChanged="navView_SelectionChanged" Background="CornflowerBlue" >
-
+        Grid.Row="1" SelectionChanged="navView_SelectionChanged">
         <NavigationView.MenuItems>
-            <NavigationViewItem Content="Wheely Good Cars!"/>
+            <NavigationViewItem Content="Wheely Good Cars!" x:Name="NavItem_Home"/>
             <NavigationViewItem Content="Alle Auto's" x:Name="NavItem_AllCars"/>
             <NavigationViewItem Content="Mijn Aanbod" x:Name="NavItem_MyOffers"/>
             <NavigationViewItem Content="Aanbod Plaatsen" x:Name="NavItem_PlaceOffer"/>
         </NavigationView.MenuItems>
-        <Frame x:Name="contentFrame"/>
+        <Frame x:Name="contentFrame" BorderBrush="MidnightBlue" BorderThickness="2"/>
         <!--Content-->
         
         <!--Content-->

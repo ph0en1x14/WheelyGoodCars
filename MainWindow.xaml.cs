@@ -28,9 +28,23 @@ namespace WheelyGoodCars
             this.InitializeComponent();
         }
 
-        //private void myButton_Click(object sender, RoutedEventArgs e)
-        //{
-        //    myButton.Content = "Vroom Vroom";
-        //}
+        private void navView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args) 
+        { 
+            FrameNavigationOptions navOptions = new FrameNavigationOptions();
+            navOptions.TransitionInfoOverride = args.RecommendedNavigationTransitionInfo;
+            if (sender.PaneDisplayMode == NavigationViewPaneDisplayMode.Top)
+            {
+                navOptions.IsNavigationStackEnabled = false;
+            }
+            Type pageType = typeof(Page_Home);
+
+            var selectedItem= ( NavigationViewItem)args.SelectedItem;
+            if (selectedItem.Name == NavItem_Home.Name)
+            {
+                pageType = typeof(Page_Home);
+            }
+
+            _ = contentFrame.Navigate(pageType);
+        }
     }
 }
