@@ -8,12 +8,19 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Title="WheelyGoodCars">
-    <Grid  Background="RoyalBlue">
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="7, 7, 0, 0" BorderThickness="2">
-            <TextBlock Margin="0,5, 5, 0" Foreground="MidnightBlue" >Wheely Good Cars</TextBlock>
-            <Button Margin="0,0, 5, 0" Background="RoyalBlue" Foreground="MidnightBlue" x:Name="myButton" Click="myButton_Click">Alle Auto's</Button>
-            <Button Margin="0,0, 5, 0" Background="RoyalBlue" Foreground="MidnightBlue" x:Name="myButton1" >Mijn Aanbod</Button>
-            <Button Margin="0,0, 5, 0" Background="RoyalBlue" Foreground="MidnightBlue" x:Name="myButton2" >Aanbod Plaatsen</Button>
-        </StackPanel>
-    </Grid>
+
+    <NavigationView x:Name="navView" PaneDisplayMode="Top" SelectionFollowsFocus="Enabled" IsBackButtonVisible="Collapsed"
+        Grid.Row="1" SelectionChanged="navView_SelectionChanged" Background="CornflowerBlue" >
+
+        <NavigationView.MenuItems>
+            <NavigationViewItem Content="Wheely Good Cars!"/>
+            <NavigationViewItem Content="Alle Auto's" x:Name="NavItem_AllCars"/>
+            <NavigationViewItem Content="Mijn Aanbod" x:Name="NavItem_MyOffers"/>
+            <NavigationViewItem Content="Aanbod Plaatsen" x:Name="NavItem_PlaceOffer"/>
+        </NavigationView.MenuItems>
+        <Frame x:Name="contentFrame"/>
+        <!--Content-->
+        
+        <!--Content-->
+    </NavigationView>
 </Window>

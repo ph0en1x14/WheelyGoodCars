@@ -28,9 +28,9 @@ namespace WheelyGoodCars
             this.InitializeComponent();
         }
 
-        private void myButton_Click(object sender, RoutedEventArgs e)
-        {
-            myButton.Content = "Vroom Vroom";
-        }
+        //private void myButton_Click(object sender, RoutedEventArgs e)
+        //{
+        //    myButton.Content = "Vroom Vroom";
+        //}
     }
 }
