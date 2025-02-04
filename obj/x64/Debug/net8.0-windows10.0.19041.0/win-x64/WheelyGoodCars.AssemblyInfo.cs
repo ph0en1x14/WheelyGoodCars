@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WheelyGoodCars")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cab5369da8dee326e3982be1247c71714b93c926")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ddd8246f12dd8119092f81abbee1e59de466c752")]
 [assembly: System.Reflection.AssemblyProductAttribute("WheelyGoodCars")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WheelyGoodCars")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

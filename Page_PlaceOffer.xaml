@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="WheelyGoodCars.Page_PlaceOffer"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WheelyGoodCars"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Border Background="DarkSlateBlue">
+            <TextBlock Text=" " />
+        </Border>
+
+        <ScrollViewer Grid.Column="1" Padding="20" Background="CornflowerBlue">
+            <StackPanel Spacing="15">
+                <TextBlock FontSize="28" 
+                           FontWeight="Bold" 
+                           Foreground="MidnightBlue"> Nieuw Aanbod
+                </TextBlock>
+
+                <Border
+                BorderBrush="MidnightBlue"
+                BorderThickness="2"
+                CornerRadius="5"
+                Height="50"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Left"
+                Background="Yellow">
+                    <Grid>
+                        <Border
+                        BorderBrush="MidnightBlue"
+                        BorderThickness="1"
+                        Width="50"
+                        VerticalAlignment="Stretch"
+                        HorizontalAlignment="Left"
+                        Background="MediumSlateBlue">
+                            <TextBlock 
+                            FontWeight="Bold"  
+                            VerticalAlignment="Center" 
+                            HorizontalAlignment="Center"  
+                            Foreground="White" >
+                            NL
+                            </TextBlock>
+                        </Border>
+                        <TextBox
+                        FontSize="20"
+                        BorderThickness="0"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        TextAlignment="Center" 
+                        Margin="100,0, 100, 0"  
+                        PlaceholderText="AA-BB-12"
+                        Background="Yellow"
+                        />
+                    </Grid>
+                </Border>
+
+                <StackPanel Spacing="10">
+                    
+                    <!-- Brand -->
+                    <TextBlock FontWeight="Bold" Foreground="MidnightBlue"> Merk:</TextBlock>
+                    <TextBox Background="AliceBlue" />
+
+                    <!-- Model -->
+                    <TextBlock FontWeight="Bold" Foreground="MidnightBlue"> Model:</TextBlock>
+                    <TextBox Background="AliceBlue" />
+
+                    <!-- Seats, Doors, and Weight -->
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0" Spacing="5">
+                            <TextBlock FontWeight="Bold" Foreground="MidnightBlue"> Zitplaatsen:</TextBlock>
+                            <TextBox Background="AliceBlue" />
+                        </StackPanel>
+                        <StackPanel Grid.Column="1" Spacing="5" Margin="10,0,0,0">
+                            <TextBlock FontWeight="Bold" Foreground="MidnightBlue"> Aantal Deuren:</TextBlock>
+                            <TextBox Background="AliceBlue" />
+                        </StackPanel>
+                        <StackPanel Grid.Column="2" Spacing="5" Margin="10,0,0,0">
+                            <TextBlock FontWeight="Bold" Foreground="MidnightBlue"> Massa Rijklaar:</TextBlock>
+                            <TextBox Background="AliceBlue" />
+                        </StackPanel>
+                    </Grid>
+
+                    <!-- Year and Color -->
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0" Spacing="5">
+                            <TextBlock FontWeight="Bold" Foreground="MidnightBlue"> Jaar Van Productie:</TextBlock>
+                            <TextBox Background="AliceBlue" />
+                        </StackPanel>
+                        <StackPanel Grid.Column="1" Spacing="5" Margin="10,0,0,0">
+                            <TextBlock FontWeight="Bold" Foreground="MidnightBlue"> Kleur:</TextBlock>
+                            <TextBox Background="AliceBlue" />
+                        </StackPanel>
+                    </Grid>
+
+                    <!-- Kilometers -->
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="50" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel>
+                            <TextBlock FontWeight="Bold" Foreground="MidnightBlue"> Aantal Kilometers:</TextBlock>
+                            <Grid>
+                                <TextBox Background="AliceBlue" />
+                                <TextBlock HorizontalAlignment="Right" FontWeight="Bold" Foreground="MidnightBlue" VerticalAlignment="Center" ></TextBlock>
+                                <!--km-->
+                            </Grid>
+                        </StackPanel>
+                    </Grid>
+
+                    <!-- Asking Price -->
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="50" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel>
+                            <TextBlock FontWeight="Bold" Foreground="MidnightBlue"> Prijs:</TextBlock>
+                            <Grid >
+                                <TextBlock HorizontalAlignment="Left" FontWeight="Bold" Foreground="MidnightBlue" VerticalAlignment="Center" >€</TextBlock>
+                                <TextBox Background="AliceBlue" HorizontalAlignment="Right" Padding="1190,0,0,0" />
+                            </Grid>
+                        </StackPanel>
+                    </Grid>
+
+                    <!-- Submit Button -->
+                    <Button Content="Aanbod afronden" 
+                            Background="DarkSlateBlue" 
+                            Foreground="White" 
+                            FontWeight="Bold" 
+                            Padding="10" 
+                            HorizontalAlignment="Stretch" />
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

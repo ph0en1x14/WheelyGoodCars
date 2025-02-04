@@ -16,8 +16,12 @@
             <NavigationViewItem x:ConnectionId='4' Content="Alle Auto's" x:Name="NavItem_AllCars"/>
             <NavigationViewItem x:ConnectionId='5' Content="Mijn Aanbod" x:Name="NavItem_MyOffers"/>
             <NavigationViewItem x:ConnectionId='6' Content="Aanbod Plaatsen" x:Name="NavItem_PlaceOffer"/>
+            <NavigationViewItem x:ConnectionId='7' Content="Admin Dashboard" x:Name="NavItem_Admin"/>
+            <NavigationViewItem x:ConnectionId='8' Content="Aanbieder Dashboard" x:Name="NavItem_Aanbieder"/>
+            <NavigationViewItem x:ConnectionId='9' Content="Sus  Users" x:Name="NavItem_Suspect"/>
+            <NavigationViewItem x:ConnectionId='10' Content="Aanbod kijken" x:Name="NavItem_Offers"/>
         </NavigationView.MenuItems>
-        <Frame x:ConnectionId='7' x:Name="contentFrame" BorderBrush="MidnightBlue" BorderThickness="2"/>
+        <Frame x:ConnectionId='11' x:Name="contentFrame" BorderBrush="MidnightBlue" BorderThickness="2"/>
         <!--Content-->
         
         <!--Content-->

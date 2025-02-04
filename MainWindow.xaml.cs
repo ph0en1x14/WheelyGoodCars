@@ -45,7 +45,11 @@ namespace WheelyGoodCars
             }
             else if (selectedItem.Name == NavItem_MyOffers.Name)
             {
-                pageType= typeof(Page_MyOffers);
+                pageType = typeof(Page_MyOffers);
+            }
+            else if (selectedItem.Name == NavItem_PlaceOffer.Name)
+            {
+                pageType = typeof(Page_PlaceOffer);
             }
 
             _ = contentFrame.Navigate(pageType);
